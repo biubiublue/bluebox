@@ -178,7 +178,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kUpRightCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)showrightupmarkWithModel:(bbxcolormode*)cModel
+-(void)showrightupmarkWithModel:(bbxcolormodel*)cModel
 {
     
     if ([self checkcModel:cModel])
