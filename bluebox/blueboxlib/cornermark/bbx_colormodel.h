@@ -5,7 +5,7 @@
 //  Created by lining on 2018/6/24.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
 @interface bbx_colormodel : NSObject
 + (instancetype) createDefaultModel;

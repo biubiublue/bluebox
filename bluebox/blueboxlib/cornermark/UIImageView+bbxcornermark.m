@@ -63,7 +63,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kUpLeftCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)show↖markWithModel:(SCMColorModel*)cModel
+-(void)showleftupmarkWithModel:(bbx_colormode*)cModel
 {
     
     if ([self checkcModel:cModel])
@@ -120,7 +120,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kDownLeftCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)show↙markWithModel:(SCMColorModel*)cModel
+-(void)showleftdownmarkWithModel:(bbx_colormode*)cModel
 {
     
     if ([self checkcModel:cModel])
@@ -177,7 +177,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kUpRightCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)markWithModel:(SCMColorModel*)cModel
+-(void)showrightupmarkWithModel:(bbx_colormode*)cModel
 {
     
     if ([self checkcModel:cModel])
@@ -234,7 +234,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kDownRightCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)show↘markWithModel:(SCMColorModel*)cModel
+-(void)showrightdownmarkWithModel:(bbx_colormode*)cModel
 {
     
     if ([self checkcModel:cModel])

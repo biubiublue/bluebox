@@ -7,6 +7,7 @@
 
 #import <UIKit/UIKit.h>
 #import "bbx_colormodel.h"
+@class bbx_colormodel;
 
 @interface UIImageView (bbxcornermark)
 
@@ -25,21 +26,21 @@
  
  @param cModel 文字颜色Model
  */
--(void)show↖markWithModel:(SCMColorModel*)cModel;
+-(void)showleftupmarkWithModel:(bbx_colormode*)cModel;
 
 /**
  左下角角标
  
  @param cModel 文字颜色Model
  */
--(void)show↙markWithModel:(SCMColorModel*)cModel;
+-(void)showleftdownmarkWithModel:(bbx_colormode*)cModel;
 
 /**
  右上角角标
  
  @param cModel 文字颜色Model
  */
--(void)show↗markWithModel:(SCMColorModel*)cModel;
+-(void)showrightupmarkWithModel:(bbx_colormode*)cModel;
 
 
 /**
@@ -47,6 +48,6 @@
  
  @param cModel 文字颜色Model
  */
--(void)show↘markWithModel:(SCMColorModel*)cModel;
+-(void)showrightdownmarkWithModel:(bbx_colormode*)cModel;
 
 @end
