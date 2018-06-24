@@ -8,7 +8,7 @@
 #import <UIKit/UIKit.h>
 
 #define bbx_ColorByStr(hexStr)  ([UIColor bbx_byString:hexStr])
-#define bbx_ColorByInt(hexInt)  ([UIColor bbx_byInt:hexNum])
+#define bbx_ColorByInt(hexInt)  ([UIColor bbx_byInt:hexInt])
 
 @interface UIColor (bbxhexcolor)
 /**
