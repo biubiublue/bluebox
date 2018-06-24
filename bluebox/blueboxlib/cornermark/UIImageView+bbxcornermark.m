@@ -20,7 +20,7 @@ static char kUpRightCMark;
 static char kDownRightCMark;
 
 @implementation UIImageView (bbxcornermark)
--(BOOL)checkcModel:(SCMColorModel*)cModel
+-(BOOL)checkcModel:(bbxcolormodel*)cModel
 {
     BOOL isOK = NO;
     
@@ -33,9 +33,10 @@ static char kDownRightCMark;
 
 -(void)hideAllMarks
 {
-    [self show_up_left_markWithModel:nil];
-    [self show_up_right_markWithModel:nil];
-    [self show_down_right_markWithModel:nil];
+    [self showleftupmarkWithModel:nil];
+    [self showleftdownmarkWithModel:nil];
+    [self showrightupmarkWithModel:nil];
+    [self showrightdownmarkWithModel:nil];
     
 }
 
@@ -63,7 +64,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kUpLeftCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)showleftupmarkWithModel:(bbx_colormode*)cModel
+-(void)showleftupmarkWithModel:(bbxcolormodel*)cModel
 {
     
     if ([self checkcModel:cModel])
@@ -120,7 +121,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kDownLeftCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)showleftdownmarkWithModel:(bbx_colormode*)cModel
+-(void)showleftdownmarkWithModel:(bbxcolormodel*)cModel
 {
     
     if ([self checkcModel:cModel])
@@ -177,7 +178,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kUpRightCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)showrightupmarkWithModel:(bbx_colormode*)cModel
+-(void)showrightupmarkWithModel:(bbxcolormode*)cModel
 {
     
     if ([self checkcModel:cModel])
@@ -234,7 +235,7 @@ static char kDownRightCMark;
     return  objc_setAssociatedObject(self, &kDownRightCMark, mark, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
 }
 
--(void)showrightdownmarkWithModel:(bbx_colormode*)cModel
+-(void)showrightdownmarkWithModel:(bbxcolormodel*)cModel
 {
     
     if ([self checkcModel:cModel])
