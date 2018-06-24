@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   #   * Try to keep it short, snappy and to the point.
   #   * Write the description between the DESC delimiters below.
   #   * Finally, don't worry about the indent, CocoaPods strips it!
-  s.description  = <<-DESC 'biu_SCMark'
+  s.description  = <<-DESC 'bluebox 蓝色盒子 常用的一些iOS代码 code box'
                    DESC
 
   s.homepage     = "https://github.com/biubiublue/bluebox.git"
@@ -90,7 +90,7 @@ Pod::Spec.new do |s|
   #  Not including the public_header_files will make all headers public.
   #
 
-  s.source_files  = 'bluebox/*.{h,m}','bluebox/blueboxlib/*/.{h,m}'
+  s.source_files  = 'bluebox/blueboxlib/**/*.{h,m}','bluebox/*.{h,m}'
   #s.exclude_files = "Classes/Exclude"
 
   # s.public_header_files = "Classes/**/*.h"
