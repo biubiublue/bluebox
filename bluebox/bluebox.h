@@ -8,5 +8,5 @@
 #ifndef bluebox_h
 #define bluebox_h
 
-
+#import "UIColor+bbxhexcolor.h"
 #endif /* bluebox_h */
