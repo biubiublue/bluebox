@@ -9,4 +9,7 @@
 #define bluebox_h
 
 #import "UIColor+bbxhexcolor.h"
+
+#import "UIImageView+bbxcornermark.h"
+
 #endif /* bluebox_h */
