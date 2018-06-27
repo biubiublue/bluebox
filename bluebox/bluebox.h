@@ -12,4 +12,6 @@
 
 #import "UIImageView+bbxcornermark.h"
 
+#import "bluedefine.h"
+
 #endif /* bluebox_h */
