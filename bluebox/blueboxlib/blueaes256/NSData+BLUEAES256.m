@@ -8,7 +8,8 @@
 
 
 #import "NSData+BLUEAES256.h"
-
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
 @implementation NSData (BLUEAES256)
 
 // 加密

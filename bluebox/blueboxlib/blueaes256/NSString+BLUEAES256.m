@@ -7,7 +7,8 @@
 //
 
 #import "NSString+BLUEAES256.h"
-
+#import <CommonCrypto/CommonDigest.h>
+#import <CommonCrypto/CommonCryptor.h>
 @implementation NSString (BLUEAES256)
 
 
