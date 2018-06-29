@@ -17,7 +17,7 @@
     const char *cstr = [self cStringUsingEncoding:NSUTF8StringEncoding];
     NSData *data = [NSData dataWithBytes:cstr length:self.length];
     //对数据进行加密
-    NSData *result = [data aes256_encrypt:key];
+    NSData *result = [data blueaes256_encrypt:key];
     
     //转换为2进制字符串
     if (result && result.length > 0) {
@@ -49,7 +49,7 @@
     }
     
     //对数据进行解密
-    NSData* result = [data aes256_decrypt:key];
+    NSData* result = [data blueaes256_decrypt:key];
     if (result && result.length > 0) {
         
         return [[NSString alloc] initWithData:result encoding:NSUTF8StringEncoding];

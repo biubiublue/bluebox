@@ -9,7 +9,7 @@
 
 #import "NSData+BLUEAES256.h"
 
-@implementation NSData (BLU EAES256)
+@implementation NSData (BLUEAES256)
 
 // 加密
 - (NSData *)blueaes256_encrypt:(NSString *)key{
