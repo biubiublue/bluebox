@@ -9,9 +9,9 @@
 #define bluebox_h
 
 #import "UIColor+bbxhexcolor.h"
-
 #import "UIImageView+bbxcornermark.h"
-
 #import "bluedefine.h"
-
+#import "bluemail.h"
+#import "NSString+BLUEAES256.h"
+#import "NSData+BLUEAES256.h"
 #endif /* bluebox_h */
