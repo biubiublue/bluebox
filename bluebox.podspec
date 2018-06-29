@@ -16,7 +16,7 @@ Pod::Spec.new do |s|
   #
 
   s.name         = "bluebox"
-  s.version      = "1.0.2"
+  s.version      = "1.0.3"
   s.summary      = "蓝色盒子，bluebox，里面有常用的一些iOS代码"
 
   # This description is used to generate tags and improve search results.
