@@ -17,7 +17,7 @@
     cModel.margin_left   = 3;
     cModel.margin_right  = 3;
     cModel.cornerRadius  = 4;
-    
+    cModel.tFont  = [UIFont systemFontOfSize:8];
     return cModel;
 }
 @end

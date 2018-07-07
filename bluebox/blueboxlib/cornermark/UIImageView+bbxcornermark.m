@@ -8,7 +8,7 @@
 #import "UIImageView+bbxcornermark.h"
 #import "objc/runtime.h"
 
-#define Font_Default            [UIFont systemFontOfSize:15]//默认字体大小
+#define Font_Default            [UIFont systemFontOfSize:8]//默认字体大小
 #define TextColor_Default       [UIColor blackColor]//默认文字颜色
 #define BackgroundColor_Default [UIColor clearColor]//默认背景颜色
 
@@ -88,6 +88,7 @@ static char kDownRightCMark;
     self.upLeftCMark.backgroundColor    = cModel.background_color?:BackgroundColor_Default;
     self.upLeftCMark.layer.cornerRadius = cModel.cornerRadius;
     self.clipsToBounds                  = TRUE;
+    self.upLeftCMark.font               = cModel.tFont?:Font_Default;
     
     [self.upLeftCMark sizeToFit];
     
@@ -145,7 +146,7 @@ static char kDownRightCMark;
     self.downLeftCMark.backgroundColor    = cModel.background_color?:BackgroundColor_Default;
     self.downLeftCMark.layer.cornerRadius = cModel.cornerRadius;
     self.clipsToBounds                    = TRUE;
-    
+    self.downLeftCMark.font               = cModel.tFont?:Font_Default;
     [self.downLeftCMark sizeToFit];
     
     CGFloat x,y,w,h;
@@ -202,7 +203,7 @@ static char kDownRightCMark;
     self.upRightCMark.backgroundColor    = cModel.background_color?:BackgroundColor_Default;
     self.upRightCMark.layer.cornerRadius = cModel.cornerRadius;
     self.clipsToBounds                   = TRUE;
-    
+    self.upRightCMark.font               = cModel.tFont?:Font_Default;
     [self.upRightCMark sizeToFit];
     CGFloat x,y,w,h;
     
@@ -259,7 +260,7 @@ static char kDownRightCMark;
     self.downRightCMark.backgroundColor    = cModel.background_color?:BackgroundColor_Default;
     self.downRightCMark.layer.cornerRadius = cModel.cornerRadius;
     self.clipsToBounds                     = TRUE;
-    
+    self.downRightCMark.font               = cModel.tFont?:Font_Default;
     [self.downRightCMark sizeToFit];
     CGFloat x,y,w,h;
     
