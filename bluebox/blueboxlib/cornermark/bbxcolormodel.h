@@ -10,7 +10,7 @@
 @interface bbxcolormodel : NSObject
 + (instancetype) createDefaultModel;
 
-@property(nonatomic,NSString) UIFont * tFont;
+@property(nonatomic,strong) UIFont * tFont;
 
 /**
  显示的文字
