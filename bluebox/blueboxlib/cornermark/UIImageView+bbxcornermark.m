@@ -157,8 +157,8 @@ static char kDownRightCMark;
     }
     else
     {
-        w = CGRectGetWidth(self.upLeftCMark.frame)+FitWidth_Default;
-        h = CGRectGetHeight(self.upLeftCMark.frame);
+        w = CGRectGetWidth(self.downLeftCMark.frame)+FitWidth_Default;
+        h = CGRectGetHeight(self.downLeftCMark.frame);
     }
     
     x = cModel.margin_left;
@@ -270,8 +270,8 @@ static char kDownRightCMark;
     }
     else
     {
-        w = CGRectGetWidth(self.upRightCMark.frame)+FitWidth_Default;
-        h = CGRectGetHeight(self.upRightCMark.frame);
+        w = CGRectGetWidth(self.downRightCMark.frame)+FitWidth_Default;
+        h = CGRectGetHeight(self.downRightCMark.frame);
     }
     
     x = self.bounds.size.width-w-cModel.margin_right;
