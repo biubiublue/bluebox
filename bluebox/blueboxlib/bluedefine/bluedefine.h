@@ -51,5 +51,26 @@ CGSizeEqualToSize(CGSizeMake(1125, 2436), [[UIScreen mainScreen] currentMode].si
 #define  bbx_PingFangSemibold(kk)    ([UIFont fontWithName:@"PingFangSC-Semibold" size:kk]?:[UIFont boldSystemFontOfSize:kk])
 #define  bbx_PingFangMedium(kk)    ([UIFont fontWithName:@"PingFangSC-Medium" size:kk]?:[UIFont boldSystemFontOfSize:kk])
 
+//苹果震动反馈，震动一下
+#define  bbx_ImpactFeedback_Light     if (@available(iOS 10.0,*))\
+{\
+    UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleLight];\
+    [generator prepare];\
+    [generator impactOccurred];\
+}\
+
+#define  bbx_ImpactFeedback_Medium     if (@available(iOS 10.0,*))\
+{\
+UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleMedium];\
+[generator prepare];\
+[generator impactOccurred];\
+}\
+
+#define  bbx_ImpactFeedback_Heavy     if (@available(iOS 10.0,*))\
+{\
+UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWithStyle: UIImpactFeedbackStyleHeavy];\
+[generator prepare];\
+[generator impactOccurred];\
+}\
 
 #endif /* bluedefine_h */
