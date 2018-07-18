@@ -14,4 +14,5 @@
 #import "bluemail.h"
 #import "NSString+BLUEAES256.h"
 #import "NSData+BLUEAES256.h"
+#import "UIImageView+bbx_blurImage.h"
 #endif /* bluebox_h */
