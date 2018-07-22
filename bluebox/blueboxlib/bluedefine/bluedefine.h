@@ -73,4 +73,46 @@ UIImpactFeedbackGenerator *generator = [[UIImpactFeedbackGenerator alloc] initWi
 [generator impactOccurred];\
 }\
 
+
+//weak and strong
+#ifndef bbx_weak
+#if __has_feature(objc_arc)
+
+#define bbxweak( x ) \\
+_Pragma("clang diagnostic push") \\
+_Pragma("clang diagnostic ignored \\"-Wshadow\\"") \\
+autoreleasepool{} __weak __typeof__(x) __weak_##x##__ = x; \\
+_Pragma("clang diagnostic pop")
+
+#else
+
+#define bbxweak( x ) \\
+_Pragma("clang diagnostic push") \\
+_Pragma("clang diagnostic ignored \\"-Wshadow\\"") \\
+autoreleasepool{} __block __typeof__(x) __block_##x##__ = x; \\
+_Pragma("clang diagnostic pop")
+
+#endif
+#endif
+
+#ifndef bbx_strong
+#if __has_feature(objc_arc)
+
+#define bbxstrong( x ) \\
+_Pragma("clang diagnostic push") \\
+_Pragma("clang diagnostic ignored \\"-Wshadow\\"") \\
+try{} @finally{} __typeof__(x) x = __weak_##x##__; \\
+_Pragma("clang diagnostic pop")
+
+#else
+
+#define bbxstrong( x ) \\
+_Pragma("clang diagnostic push") \\
+_Pragma("clang diagnostic ignored \\"-Wshadow\\"") \\
+try{} @finally{} __typeof__(x) x = __block_##x##__; \\
+_Pragma("clang diagnostic pop")
+
+#endif
+#endif
+
 #endif /* bluedefine_h */
